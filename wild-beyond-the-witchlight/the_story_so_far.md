@@ -1,4 +1,8 @@
-# The Story So Far
+---
+layout: page
+title: The Story So Far
+permalink: /story/
+---
 
 *A chronicle of four lost souls, a carnival of wonders, and the misty realm beyond the looking glass.*
 

@@ -1,0 +1,15 @@
+title: "D&D Campaign Journal"
+description: "Chronicles of our adventures through the Feywild and beyond"
+url: "https://joosthart.github.io"
+baseurl: "/dnd-campaign-journal"
+
+markdown: kramdown
+
+exclude:
+  - wild-beyond-the-witchlight/transcripts/
+  - wild-beyond-the-witchlight/CLAUDE.md
+  - .claude/
+  - IDEAS.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md

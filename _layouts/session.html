@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{{ content }}
+
+{% assign sessions = site.pages | where: "layout", "session" | sort: "session_number" %}
+<div class="session-nav">
+  <span>
+    {% assign prev = page.session_number | minus: 1 %}
+    {% for s in sessions %}
+      {% if s.session_number == prev %}
+        <a href="{{ site.baseurl }}{{ s.url }}">&larr; {{ s.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </span>
+  <span>
+    {% for s in sessions %}
+      {% assign next = page.session_number | plus: 1 %}
+      {% if s.session_number == next %}
+        <a href="{{ site.baseurl }}{{ s.url }}">{{ s.title }} &rarr;</a>
+      {% endif %}
+    {% endfor %}
+  </span>
+</div>

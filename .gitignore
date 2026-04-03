@@ -1,5 +1,14 @@
 # macOS
 .DS_Store
 
-# Claude Code auto-memory (personal, not for sharing)
+# Claude Code auto-memory and local settings (personal, not for sharing)
 .claude/projects/
+.claude/settings.local.json
+
+# Project notes (not for repo)
+IDEAS.md
+
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata

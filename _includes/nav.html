@@ -1,0 +1,6 @@
+<nav>
+  <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
+  <a href="{{ site.baseurl }}/story/" {% if page.url == "/story/" %}class="active"{% endif %}>Story So Far</a>
+  <a href="{{ site.baseurl }}/sessions/" {% if page.url contains "/sessions" %}class="active"{% endif %}>Sessions</a>
+  <a href="{{ site.baseurl }}/characters/" {% if page.url contains "/characters" %}class="active"{% endif %}>Characters</a>
+</nav>

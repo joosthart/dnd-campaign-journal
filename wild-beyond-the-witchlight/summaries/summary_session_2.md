@@ -1,4 +1,9 @@
-# Session 2: Into the Mist
+---
+layout: session
+title: "Session 2: Into the Mist"
+session_number: 2
+permalink: /sessions/2/
+---
 
 ## Characters Present
 

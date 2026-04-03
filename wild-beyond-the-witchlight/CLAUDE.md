@@ -1,7 +1,7 @@
 # Wild Beyond the Witchlight — Campaign Project
 
 ## What This Is
-A D&D campaign journal for a group playing **The Wild Beyond the Witchlight**. This project contains session transcripts, summaries, and character backstories. Claude helps produce polished session summaries and maintain a running narrative.
+A D&D campaign journal for a group playing **The Wild Beyond the Witchlight**. This project contains session transcripts, summaries, and character pages. Claude helps produce polished session summaries and maintain a running narrative.
 
 ## The Golden Rule: NO SPOILERS
 
@@ -18,14 +18,14 @@ A D&D campaign journal for a group playing **The Wild Beyond the Witchlight**. T
 wild-beyond-the-witchlight/
   transcripts/          # Raw session transcripts (from Notion note-taker)
   summaries/            # Polished session summaries (Claude-written)
-  backstories/          # Player character backstories
+  characters/           # Character pages (generated from session content only)
   the_story_so_far.md   # Running narrative and tracker
 ```
 
 ## Workflow: Adding a New Session
 
 1. The user drops a new transcript into `wild-beyond-the-witchlight/transcripts/`.
-2. Claude reads the transcript alongside all prior summaries, backstories, and `wild-beyond-the-witchlight/the_story_so_far.md`.
+2. Claude reads the transcript alongside all prior summaries and `wild-beyond-the-witchlight/the_story_so_far.md`.
 3. Claude produces a polished summary in `wild-beyond-the-witchlight/summaries/` following the summary format below.
 4. Claude updates `wild-beyond-the-witchlight/the_story_so_far.md`: adds a new chapter to the narrative, updates the "What We Know" section (NPCs, lore, inventory), and refreshes "Open Threads" (adding new ones, resolving answered ones).
 5. The user reviews and requests edits.
@@ -48,8 +48,4 @@ Each summary should include:
 
 ## Characters
 
-Refer to `backstories/` for detailed backstories. Quick reference:
-- **Erophin** — Wood elf, ranger-type, golden eyes, horns, accompanied by birds. Lost something unknown.
-- **Pip Moonstep** — Haregon bladesinger, lost his rhythm at the carnival 8 years ago. Trained by a faerie mentor in dance-like swordsmanship.
-- **Baba (Uma)** — Tabaxi monk, purple skin, works at the carnival. Possible memory/time issues.
-- **Aruni** — Druid, 142 years old, dreadlocks, searching for someone she can't remember.
+Refer to `wild-beyond-the-witchlight/characters/` for character pages. These are generated from session content only — never include backstory details the other players haven't learned in-game.

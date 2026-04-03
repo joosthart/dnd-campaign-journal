@@ -1,4 +1,9 @@
-# Session 1: Through the Looking Glass
+---
+layout: session
+title: "Session 1: Through the Looking Glass"
+session_number: 1
+permalink: /sessions/1/
+---
 
 ## Characters Present
 
@@ -93,7 +98,7 @@ The party cornered the Kenku, who identified herself as **Kettlesteam**. She was
 She offered a deal: help her get an audience with the carnival's owners, and she would return Candlefoot's voice. The party agreed, though trust was thin. Kettlesteam also shared something she'd overheard, speaking in Mr. Light's stolen voice:
 
 *"Someone is going to find out about this. They'll shut us down."*
-And Mr. Witch: *"We agreed to this pact. Our hands were forced. But her eyes were open. We let the Hourglass Cove take what it wants, and in return we stay in business."*
+And Mr. Witch: *"We agreed to this pact. Our hands were forced. But her eyes were open. We let the Hourglass Coven take what it wants, and in return we stay in business."*
 
 ### The Crowning and the Heist
 
@@ -127,7 +132,7 @@ Baba first. Then Pip. Then Aruni. And finally Erophin, newly crowned and freshly
 
 - Each party member has lost something, likely stolen during a visit to the carnival: Pip lost his rhythm, Erophin lost something he can't identify, Baba may have lost memories or her sense of time, and Aruni lost knowledge of who she's searching for.
 - Mr. Light and Mr. Witch are secretly **shadar-kai** (shadow elves) whose true nature is visible in the Hall of Illusions' mirrors.
-- The carnival operates under a **pact**: they let the "Hourglass Cove" take what it wants, and in return the carnival stays in business. Mr. Light and Mr. Witch claim their hands were forced.
+- The carnival operates under a **pact**: they let the "Hourglass Coven" take what it wants, and in return the carnival stays in business. Mr. Light and Mr. Witch claim their hands were forced.
 - **Kettlesteam** the kenku warlock made a pact with an archfey named **Zybilna**, ruler of **Prismeer**, but has lost contact with her patron.
 - The party stole **Mr. Witch's pocket watch** and used it as leverage to gain passage through the mirror portal to Prismeer.
 - A mysterious **small woman with a large face/mask** appeared in the Hall of Illusions, asking about regrets and offering help, then vanishing.
@@ -143,7 +148,7 @@ Baba first. Then Pip. Then Aruni. And finally Erophin, newly crowned and freshly
 - Who is **Zybilna**, the dormant queen, and what happened to her?
 - What is the **alicorn** and where can it be found?
 - What is the **"rule of three"** that Mr. Witch warned about?
-- What is the **Hourglass Cove** and what does it want?
+- What is the **Hourglass Coven** and what does it want?
 - Who was the **small woman with the large face/mask** in the Hall of Illusions who asked about regrets?
 - What is the connection between the raven/blackbird and the disappearances?
 - Where is Dirlagraun's missing child?
