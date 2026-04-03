@@ -21,7 +21,8 @@ Process the transcript for session **$ARGUMENTS** and produce all campaign journ
    layout: session
    title: "Session $ARGUMENTS: [Evocative Title]"
    session_number: $ARGUMENTS
-   permalink: /sessions/$ARGUMENTS/
+   permalink: /wbtw/sessions/$ARGUMENTS/
+   campaign: wbtw
    ---
    ```
    Followed by:
@@ -41,7 +42,7 @@ Process the transcript for session **$ARGUMENTS** and produce all campaign journ
    - Update **Open Threads** — add new questions, remove or mark any that were answered this session
 
 5. **Update the website**: 
-   - Add the new session to the card lists in `index.md` and `wild-beyond-the-witchlight/sessions.md` (chronological order — append at the bottom).
+   - Add the new session to the card lists in `wild-beyond-the-witchlight/index.md` and `wild-beyond-the-witchlight/sessions.md` (chronological order — append at the bottom).
    - Update character pages in `wild-beyond-the-witchlight/characters/` with any new information revealed this session (new abilities, items, relationships, combat moments). Only include information that has been shown in sessions — never include backstory details the other players haven't learned in-game.
 
 6. **Present results**: Show the user the new summary and a brief changelog of what was updated in `the_story_so_far.md` so they can review.

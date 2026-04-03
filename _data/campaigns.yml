@@ -1,0 +1,16 @@
+# List of campaigns. Add a new entry to register a campaign on the site.
+# The slug is used for URL prefixes, data directories, and image paths.
+
+- slug: wbtw
+  name: Wild Beyond the Witchlight
+  tagline: "Four lost souls, a carnival of wonders, and the misty realm beyond the looking glass."
+  status: active  # active or completed
+  nav:
+    - label: Story
+      url: /wbtw/story/
+    - label: Sessions
+      url: /wbtw/sessions/
+    - label: Characters
+      url: /wbtw/characters/
+    - label: Journey
+      url: /wbtw/journey/

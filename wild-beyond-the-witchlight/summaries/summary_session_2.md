@@ -2,7 +2,8 @@
 layout: session
 title: "Session 2: Into the Mist"
 session_number: 2
-permalink: /sessions/2/
+permalink: /wbtw/sessions/2/
+campaign: wbtw
 ---
 
 ## Characters Present

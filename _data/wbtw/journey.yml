@@ -1,0 +1,252 @@
+# Journey timeline data — locations the party has visited, in order.
+# Add new stops as sessions are played. Only include discovered locations.
+#
+# Types: region, stop, line, portal
+# Regions: carnival, hither, hostile
+# Categories: Landmark, Location, Dangerous
+
+- type: region
+  region: carnival
+  name: Witchlight Carnival
+  sub: Session 1
+
+- type: stop
+  region: carnival
+  category: Landmark
+  name: Flower Arch Gate
+  short: The grand entrance to the carnival, manned by a goblin ticket-taker.
+  long: >-
+    The Witchlight Carnival announced itself with purple-tinted air, enormous
+    dragonflies, fairies trailing smoke, and a low mist. Through the great flower
+    arch, the world became impossibly more colorful. An elderly goblin processed
+    tickets at the booth. Erophin tried to pass as a child for a cheaper ticket —
+    unconvincingly. Baba had a free ticket from an anonymous benefactor.
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Location
+  name: Calliope Wagon
+  short: A painted wagon with golden smoke and a button-collecting monkey.
+  long: >-
+    A brightly painted wagon producing golden puffs of smoke. A monkey in a
+    button-covered cloak requested a spare button. Erophin obliged, pulling one
+    from his boot, earning jolly music in return. Baba was unimpressed: 'Why
+    would you do that? It's such ugly music.'
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Location
+  name: Feasting Orchard
+  short: Berry pie, elves on stilts, and a cupcake eating contest.
+  long: >-
+    The air smelled of flowers and berry pie as elves on stilts picked fruit
+    overhead. Aruni demolished a cupcake eating contest and won the prize —
+    secretly a potion of invisibility disguised as a cupcake. A natural 20
+    deception check kept the secret. A gnome in a pear tree claimed to have
+    'seen many places' but offered nothing more.
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Location
+  name: Swan Gondola
+  short: An hour-long ride with Feathereen, a philosophical swan.
+  long: >-
+    A flower-draped gondola piloted by Feathereen, who opened with the question:
+    'What is joy?' The ride circled the carnival's perimeter through dense banks
+    of mist for about an hour — the first time the party truly bonded. Ages were
+    exchanged, stories hinted at. Feathereen mused on whether time was an
+    illusion. Baba mentioned knowing the Hall of Illusions and Candlefoot the mime.
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Landmark
+  name: Hall of Illusions
+  short: Aging mirrors, Tasha's cabinet, and the portal to Prismeer.
+  long: >-
+    Dominated by Tasha's cabinet — triggering uncontrollable laughter. The mirrors
+    showed visitors aging or growing younger. Pip saw himself old with drooping
+    ears. Erophin saw himself grey-haired but at peace. Baba glimpsed a tiny baby
+    kitten. A mysterious masked woman appeared in one mirror asking about regrets,
+    then vanished. Later, this became the portal — Mr. Light taught the password:
+    'Hither, thither, here and there. Wander yonder, show me where.'
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Landmark
+  name: Big Top Extravaganza
+  short: "The main show — Pip's failed dance, Baba's triumph, Erophin's crowning."
+  long: >-
+    Mr. Light hosted from a spinning hoop above the ring. Pip stepped up to
+    dance — his rhythm betrayed him. The crowd went silent. Baba followed with a
+    flaming hoop leap that brought the house down. Erophin attempted archery
+    tricks that were redirected. Later, during the Crowning, Mr. Light's scepter
+    chose Erophin as the Witchlight Monarch — the button-giver, the
+    Ruben-rescuer. He gained the Charm of the Monarch: butterfly wings and
+    flight, usable three times.
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Location
+  name: Staff Area
+  short: "Behind the bramblewood wall — the owners' wagon and Burly's confession."
+  long: >-
+    Past a bramblewood wall, the clown Fecko smoking a bubble pipe. Mr. Light
+    and Mr. Witch deflected questions about losses: 'We are not responsible.
+    Forces are at work on the other side.' Mr. Witch: 'What is lost is lost.
+    Gone's gone.' Afterwards, Burly removed his helmet and confessed — people
+    had been going missing for multiple carnivals. He proposed stealing Mr.
+    Witch's pocket watch as leverage.
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Location
+  name: Silversong Lake
+  short: "Palasha's stage. The heckler was Kettlesteam the kenku."
+  long: >-
+    Palasha the mermaid performed until heckling drove her to tears. Erophin
+    spotted the heckler shapeshifting into a kenku — Kettlesteam, a warlock
+    whose patron Zybilna had gone silent. She'd stolen Candlefoot's voice to
+    force the owners' hand. She revealed the Hourglass Coven's pact: 'We let
+    the Hourglass Coven take what it wants, and in return we stay in business.'
+  session: 1
+
+- type: line
+  region: carnival
+
+- type: stop
+  region: carnival
+  category: Location
+  name: Lost Property
+  short: Dirlagraun the displacer beast and his missing child.
+  long: >-
+    Dirlagraun — midnight blue with tentacles and fake butterfly wings —
+    dispensed apple juice to lost children. His own child had vanished from the
+    carnival. He'd seen a blackbird. The party promised to help. A boy named
+    Viro stole Dirlagraun's mirrored ball (his missing child's favorite toy)
+    and Pip chased him down to recover it.
+  session: 1
+
+# ═══ PORTAL CROSSING ═══
+
+- type: portal
+
+# ═══ PRISMEER — HITHER ═══
+
+- type: region
+  region: hither
+  name: "Prismeer — Hither"
+  sub: "Session 2 — The swampy splinter"
+
+- type: stop
+  region: hither
+  category: Landmark
+  name: Broken Bridge
+  short: "A colossal glowing bridge 100ft above the swamp. The party's arrival point."
+  long: >-
+    The party emerged on the remnants of a colossal white stone bridge, roughly
+    twenty feet wide and a hundred feet high, its surface glowing faintly.
+    Enormous sections had collapsed. Below stretched a hazy swampland reeking of
+    standing water and rotting plants, alive with discordant birdsong. Pip felt a
+    tingling at the base of his skull. They spotted a patchwork balloon drifting
+    through the air before descending into the swamp.
+  session: 2
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hither
+  category: Location
+  name: Swampland
+  short: Thick mist, a rope for safety, and six brigands demanding happy memories.
+  long: >-
+    Hazy marshland below the bridge. The party held a rope for safety through the
+    shifting fog. Six haregon brigands emerged singing praises of Agdon
+    Longscarf, the self-styled Brigand Prince. They wanted the party's happiest
+    memories — not gold. Pip recoiled. Baba deadpanned she had no happy memories.
+    The party rolled 18s on intimidation and the brigands fled. Baba took credit:
+    'Bunnies are scared of cats.'
+  session: 2
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hither
+  category: Landmark
+  name: Crooked Tower
+  short: "Sir Talavar's prison. Two giant snakes. The party's first real combat."
+  long: >-
+    A crumbling stone tower wrapped in dark branches, leaning at an alarming
+    angle. Sir Talavar — a violet faerie dragon, servant of the Summer Queen —
+    was trapped in a silver birdcage in his crashed balloon at the top. His pilot
+    Wigglewog had not survived. Erophin used his butterfly wings to fly up and
+    investigate. Two giant constrictor snakes guarded the base — the first real
+    combat. One snake turned to stone when killed by Erophin's birds. After
+    freeing Sir Talavar, he revealed Zybilna had been frozen by the Hourglass
+    Coven using the Cauldron of Iggwilv, and spoke of Vorneal Stellhour — a
+    possible lead on Pip's lost mentor.
+  session: 2
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hither
+  category: Landmark
+  name: Telamy Hill
+  short: "Awakened willows, Jingle Jangle's key cave, and foraged truffles."
+  long: >-
+    Rose from the swamp 'like a sore thumb,' covered in enormous willows that
+    sway without wind. Five awakened trees greeted the party. Jingle Jangle — a
+    goblin in a coat made of keys — lived in a keyhole-shaped cave at the summit,
+    filled with hundreds of keys and candlelight. She'd been robbed by brigands.
+    The party foraged truffles (Erophin rolled a natural 20) and traded them for
+    the key to Sir Talavar's cage. Jingle Jangle shared intel: the Tollway was
+    north, and Clapperclaw the scarecrow near Downfall could guide them to
+    Thither.
+  session: 2
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hostile
+  category: Dangerous
+  name: "Brigand's Tollway"
+  short: "Agdon Longscarf's domain. Catwalks over a deep bog. The session ended here."
+  long: >-
+    Rickety wooden catwalks stretching over a deep bog, circling a giant tree
+    stump. Headquarters of Agdon Longscarf — the haregon Brigand Prince with a
+    bright blue scarf who moves as fast as lightning. The session ended with the
+    party poised at its threshold, the catwalks climbing upward into the murk.
+    Downfall — and Bavlorna Blightstraw — lies beyond.
+  session: 2

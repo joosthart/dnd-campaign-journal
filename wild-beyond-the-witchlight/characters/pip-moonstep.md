@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Pip Moonstep
-permalink: /characters/pip-moonstep/
+permalink: /wbtw/characters/pip-moonstep/
+campaign: wbtw
 ---
+
+<img src="{{ site.baseurl }}/assets/images/wbtw/profile-picture-pip.jpeg" alt="Pip Moonstep" class="character-portrait">
 
 **Race:** Haregon | **Class:** Bladesinger Wizard | **Age:** 22
 

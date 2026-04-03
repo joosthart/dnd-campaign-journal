@@ -3,7 +3,7 @@ layout: default
 ---
 {{ content }}
 
-{% assign sessions = site.pages | where: "layout", "session" | sort: "session_number" %}
+{% assign sessions = site.pages | where: "layout", "session" | where: "campaign", page.campaign | sort: "session_number" %}
 <div class="session-nav">
   <span>
     {% assign prev = page.session_number | minus: 1 %}

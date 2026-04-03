@@ -210,6 +210,76 @@ blockquote p:last-child { margin-bottom: 0; }
   font-size: 0.85rem;
 }
 
+/* ── Character portraits ── */
+
+/* Full portrait on character detail pages */
+.character-portrait {
+  float: right;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--accent-dim);
+  margin: 0 0 1rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+/* Thumbnail on character index page */
+.character-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+.character-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: border-color 0.2s;
+}
+.character-list li:hover { border-color: var(--accent-dim); }
+.character-thumb {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent-dim);
+  flex-shrink: 0;
+}
+.character-list a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+}
+.character-list .race {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.character-list .description {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0.2rem 0 0;
+}
+
+/* Small portrait in home page party grid */
+.party-portrait {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent-dim);
+  margin-bottom: 0.5rem;
+}
+.party-grid li {
+  text-align: center;
+}
+
 /* Code/pre for flavor text */
 code {
   background: var(--bg-card);
@@ -219,6 +289,260 @@ code {
 }
 
 em { color: var(--text-muted); }
+
+/* ── Journey Timeline ── */
+:root {
+  --carnival: #d4a574;
+  --hither: #7a9e7e;
+  --hostile: #c75a6d;
+  --portal: #a88bd4;
+}
+
+.journey-page { margin: 0 -1.5rem; }
+
+.journey-header {
+  text-align: center;
+  padding: 2rem 1.5rem 0.5rem;
+}
+.journey-header h1 { margin-bottom: 0.3rem; }
+.journey-header p {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.scroll-hint {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  padding: 0.5rem 1.5rem 0;
+  opacity: 0.6;
+}
+
+.journey-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 0 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+.journey-scroll::-webkit-scrollbar { height: 8px; }
+.journey-scroll::-webkit-scrollbar-track { background: var(--bg-surface); border-radius: 4px; }
+.journey-scroll::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+.journey-scroll::-webkit-scrollbar-thumb:hover { background: var(--accent-dim); }
+
+.journey-track {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 3rem;
+  min-width: max-content;
+}
+
+/* Region banners */
+.region-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  flex-shrink: 0;
+  margin-top: 100px;
+  text-align: center;
+}
+.region-banner .region-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+.region-banner .region-sub {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+.region-banner.carnival .region-name { color: var(--carnival); }
+.region-banner.hither .region-name { color: var(--hither); }
+
+/* Path line connectors */
+.path-line {
+  height: 3px;
+  width: 60px;
+  flex-shrink: 0;
+  align-self: center;
+  margin-top: 160px;
+  border-radius: 2px;
+}
+.path-line.carnival { background: var(--carnival); opacity: 0.5; }
+.path-line.hither { background: var(--hither); opacity: 0.5; }
+
+/* Portal marker */
+.portal-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  flex-shrink: 0;
+  margin-top: 130px;
+}
+.portal-marker .portal-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #c9a87c 0%, #8b6ec8 50%, transparent 70%);
+  border: 2px solid var(--portal);
+  box-shadow: 0 0 16px rgba(168,139,212,0.5);
+  margin-bottom: 0.4rem;
+}
+.portal-marker .portal-text {
+  font-size: 0.7rem;
+  color: var(--portal);
+  font-style: italic;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Location stops */
+.stop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.stop-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  width: 130px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.stop:hover .stop-card {
+  border-color: var(--accent-dim);
+  transform: translateY(-2px);
+}
+.stop-card .stop-type {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+.stop-card .stop-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+.stop-card .stop-desc {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.stop-stem {
+  width: 2px;
+  height: 30px;
+  opacity: 0.3;
+  flex-shrink: 0;
+}
+
+.stop-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0.6rem 0;
+  flex-shrink: 0;
+  border: 2px solid;
+  z-index: 2;
+}
+
+/* Color coding by region */
+.stop[data-region="carnival"] .stop-card { border-left: 3px solid var(--carnival); }
+.stop[data-region="carnival"] .stop-name,
+.stop[data-region="carnival"] .stop-type { color: var(--carnival); }
+.stop[data-region="carnival"] .stop-dot { background: var(--carnival); border-color: var(--carnival); box-shadow: 0 0 8px rgba(212,165,116,0.4); }
+.stop[data-region="carnival"] .stop-stem { background: var(--carnival); }
+
+.stop[data-region="hither"] .stop-card { border-left: 3px solid var(--hither); }
+.stop[data-region="hither"] .stop-name,
+.stop[data-region="hither"] .stop-type { color: var(--hither); }
+.stop[data-region="hither"] .stop-dot { background: var(--hither); border-color: var(--hither); box-shadow: 0 0 8px rgba(122,158,126,0.4); }
+.stop[data-region="hither"] .stop-stem { background: var(--hither); }
+
+.stop[data-region="hostile"] .stop-card { border-left: 3px solid var(--hostile); }
+.stop[data-region="hostile"] .stop-name,
+.stop[data-region="hostile"] .stop-type { color: var(--hostile); }
+.stop[data-region="hostile"] .stop-dot { background: var(--hostile); border-color: var(--hostile); box-shadow: 0 0 8px rgba(199,90,109,0.4); }
+.stop[data-region="hostile"] .stop-stem { background: var(--hostile); }
+
+/* Detail panel */
+.detail-panel {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-surface);
+  border-top: 2px solid var(--accent-dim);
+  padding: 1.2rem 2rem;
+  z-index: 100;
+  animation: slideUp 0.2s ease-out;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+.detail-panel.visible { display: block; }
+.detail-panel .detail-close {
+  position: absolute;
+  top: 0.8rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.detail-panel .detail-close:hover { color: var(--text); }
+.detail-panel h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.detail-panel .detail-body {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 700px;
+}
+.detail-panel .detail-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+/* Journey legend */
+.journey-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 0 1.5rem 2rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.journey-legend span { display: flex; align-items: center; gap: 0.3rem; }
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 /* Responsive */
 @media (max-width: 600px) {

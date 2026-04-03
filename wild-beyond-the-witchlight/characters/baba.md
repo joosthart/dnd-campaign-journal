@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Baba (Uma)
-permalink: /characters/baba/
+permalink: /wbtw/characters/baba/
+campaign: wbtw
 ---
+
+<img src="{{ site.baseurl }}/assets/images/wbtw/profile-picture-baba.jpeg" alt="Baba" class="character-portrait">
 
 **Race:** Tabaxi | **Class:** Monk | **Age:** ~9
 

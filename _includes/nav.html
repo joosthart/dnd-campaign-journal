@@ -1,6 +1,16 @@
 <nav>
   <a href="{{ site.baseurl }}/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-  <a href="{{ site.baseurl }}/story/" {% if page.url == "/story/" %}class="active"{% endif %}>Story So Far</a>
-  <a href="{{ site.baseurl }}/sessions/" {% if page.url contains "/sessions" %}class="active"{% endif %}>Sessions</a>
-  <a href="{{ site.baseurl }}/characters/" {% if page.url contains "/characters" %}class="active"{% endif %}>Characters</a>
+  {% if page.campaign %}
+    {% for campaign in site.data.campaigns %}
+      {% if campaign.slug == page.campaign %}
+        {% for item in campaign.nav %}
+          <a href="{{ site.baseurl }}{{ item.url }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.label }}</a>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    {% for campaign in site.data.campaigns %}
+      <a href="{{ site.baseurl }}/{{ campaign.slug }}/" {% if page.url contains campaign.slug %}class="active"{% endif %}>{{ campaign.name }}</a>
+    {% endfor %}
+  {% endif %}
 </nav>

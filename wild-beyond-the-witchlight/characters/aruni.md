@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Aruni
-permalink: /characters/aruni/
+permalink: /wbtw/characters/aruni/
+campaign: wbtw
 ---
+
+<img src="{{ site.baseurl }}/assets/images/wbtw/profile-picture-aruni.jpeg" alt="Aruni" class="character-portrait">
 
 **Race:** Elf | **Class:** Druid | **Age:** 142
 

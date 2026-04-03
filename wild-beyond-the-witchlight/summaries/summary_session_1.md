@@ -2,7 +2,8 @@
 layout: session
 title: "Session 1: Through the Looking Glass"
 session_number: 1
-permalink: /sessions/1/
+permalink: /wbtw/sessions/1/
+campaign: wbtw
 ---
 
 ## Characters Present

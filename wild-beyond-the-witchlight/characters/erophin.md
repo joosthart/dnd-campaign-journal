@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Erophin
-permalink: /characters/erophin/
+permalink: /wbtw/characters/erophin/
+campaign: wbtw
 ---
+
+<img src="{{ site.baseurl }}/assets/images/wbtw/profile-picture-erophin.jpeg" alt="Erophin" class="character-portrait">
 
 **Race:** Wood Elf | **Class:** Swarmkeeper Ranger | **Age:** 150
 
