@@ -1,88 +1,16 @@
 ---
-layout: default
+layout: journey
 title: Journey Map
 permalink: /wbtw/journey/
 campaign: wbtw
+subtitle: "Follow the party's path through the Witchlight Carnival and into the mists of Prismeer"
+legend:
+  - label: Witchlight Carnival
+    color: carnival
+  - label: Hither
+    color: hither
+  - label: Dangerous
+    color: hostile
+  - label: Portal
+    color: portal
 ---
-
-<div class="journey-page">
-  <div class="journey-header">
-    <h1>The Journey So Far</h1>
-    <p>Follow the party's path through the Witchlight Carnival and into the mists of Prismeer</p>
-  </div>
-
-  <div class="scroll-hint">Scroll horizontally to follow the journey &rarr;</div>
-
-  <div class="journey-scroll">
-    <div class="journey-track">
-      {% for item in site.data.wbtw.journey %}
-
-        {% if item.type == "region" %}
-          <div class="region-banner {{ item.region }}">
-            <div class="region-name">{{ item.name }}</div>
-            <div class="region-sub">{{ item.sub }}</div>
-          </div>
-
-        {% elsif item.type == "line" %}
-          <div class="path-line {{ item.region }}"></div>
-
-        {% elsif item.type == "portal" %}
-          <div class="portal-marker">
-            <div class="portal-icon"></div>
-            <div class="portal-text">Through the<br>Looking Glass</div>
-          </div>
-
-        {% elsif item.type == "stop" %}
-          <div class="stop" data-region="{{ item.region }}" data-long="{{ item.long | escape }}" data-session="{{ item.session }}" data-category="{{ item.category }}">
-            <div class="stop-card">
-              <div class="stop-type">{{ item.category }}</div>
-              <div class="stop-name">{{ item.name }}</div>
-              <div class="stop-desc">{{ item.short }}</div>
-            </div>
-            <div class="stop-stem"></div>
-            <div class="stop-dot"></div>
-          </div>
-        {% endif %}
-
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="journey-legend">
-    <span><span class="legend-dot" style="background: var(--carnival);"></span> Witchlight Carnival</span>
-    <span><span class="legend-dot" style="background: var(--hither);"></span> Hither</span>
-    <span><span class="legend-dot" style="background: var(--hostile);"></span> Dangerous</span>
-    <span><span class="legend-dot" style="background: var(--portal);"></span> Portal</span>
-  </div>
-
-  <div class="detail-panel" id="detail">
-    <button class="detail-close" onclick="document.getElementById('detail').classList.remove('visible')">&times;</button>
-    <h2 id="detail-title"></h2>
-    <div class="detail-body" id="detail-body"></div>
-    <div class="detail-meta" id="detail-meta"></div>
-  </div>
-</div>
-
-<script>
-document.querySelectorAll(".stop").forEach(el => {
-  el.style.cursor = "pointer";
-  el.addEventListener("click", () => {
-    const name = el.querySelector(".stop-name").textContent;
-    const region = el.dataset.region;
-    const color = region === "carnival" ? "var(--carnival)" :
-                  region === "hostile" ? "var(--hostile)" : "var(--hither)";
-    document.getElementById("detail-title").textContent = name;
-    document.getElementById("detail-title").style.color = color;
-    document.getElementById("detail-body").textContent = el.dataset.long;
-    document.getElementById("detail-meta").innerHTML =
-      "<strong>" + el.dataset.category + "</strong> &middot; Discovered in Session " + el.dataset.session;
-    document.getElementById("detail").classList.add("visible");
-  });
-});
-
-document.addEventListener("click", e => {
-  if (!e.target.closest(".stop") && !e.target.closest(".detail-panel")) {
-    document.getElementById("detail").classList.remove("visible");
-  }
-});
-</script>
