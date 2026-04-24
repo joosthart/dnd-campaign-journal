@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{% assign npcs = site.data[page.campaign].npcs %}
+
+{% comment %}
+  Group NPCs by faction. Within a faction, sort by first_session then name.
+  Factions appear in the order their first NPC was encountered.
+{% endcomment %}
+
+{% assign factions = "" | split: "" %}
+{% for npc in npcs %}
+  {% assign f = npc.faction | default: "Other" %}
+  {% unless factions contains f %}
+    {% assign factions = factions | push: f %}
+  {% endunless %}
+{% endfor %}
+
+<div class="npcs-page">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.subtitle %}
+    <p class="page-subtitle">{{ page.subtitle }}</p>
+  {% endif %}
+
+  {{ content }}
+
+  {% for faction in factions %}
+    <h2 class="npc-faction">{{ faction }}</h2>
+    <ul class="npc-grid">
+      {% assign in_faction = npcs | where_exp: "n", "n.faction == faction" %}
+      {% if faction == "Other" %}
+        {% assign in_faction = npcs | where_exp: "n", "n.faction == nil" %}
+      {% endif %}
+      {% assign sorted = in_faction | sort: "first_session" %}
+      {% for npc in sorted %}
+        <li class="npc-card" data-status="{{ npc.status | default: 'unknown' }}">
+          <div class="npc-card-head">
+            <h3 class="npc-name">{{ npc.name }}</h3>
+            <span class="npc-status npc-status-{{ npc.status | default: 'unknown' }}">{{ npc.status | default: 'unknown' }}</span>
+          </div>
+          {% if npc.role %}<div class="npc-role">{{ npc.role }}</div>{% endif %}
+          {% if npc.location %}<div class="npc-location">{{ npc.location }}</div>{% endif %}
+          {% if npc.short %}<p class="npc-short">{{ npc.short }}</p>{% endif %}
+          {% if npc.long %}
+            <details class="npc-details">
+              <summary>More</summary>
+              <p>{{ npc.long }}</p>
+            </details>
+          {% endif %}
+          <div class="npc-meta">
+            {% if npc.first_session == npc.last_session %}
+              Session {{ npc.first_session }}
+            {% else %}
+              Sessions {{ npc.first_session }}–{{ npc.last_session }}
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

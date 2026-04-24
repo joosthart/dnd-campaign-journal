@@ -1,0 +1,405 @@
+# NPCs the party has met or learned about during play.
+# Add new entries (or update existing ones) as sessions are played.
+# Only include knowledge the party has actually gained in-game — no spoilers.
+#
+# Fields:
+#   name           Display name
+#   role           One-line label (e.g. "Bullywug King of Downfall")
+#   faction        Optional. Used to group NPCs on the page.
+#   location       Where they were last seen
+#   status         ally | neutral | hostile | defeated | missing | deceased | unknown
+#   short          One-line summary (used as card subtitle)
+#   long           Multi-line description (collapsed under <details>)
+#   first_session  Session number where they first appeared
+#   last_session   Session number where they were last seen / referenced
+
+# ─── The Witchlight Carnival ───────────────────────────────────────────────
+
+- name: Mr. Light
+  role: Co-owner of the Witchlight Carnival
+  faction: Witchlight Carnival
+  location: Witchlight Carnival
+  status: neutral
+  short: Flamboyant elven ringmaster — secretly a shadar-kai bound by the Hourglass Coven's pact.
+  long: >-
+    The flamboyant elven ringmaster of the Witchlight Carnival, hosting the Big Top
+    from a spinning hoop above the ring. With his partner Mr. Witch, he is in fact
+    a shadar-kai. He crowned Erophin as the Witchlight Monarch and granted him the
+    Charm of the Monarch. Parting words: "Find the alicorn. And free the dormant
+    queen at last."
+  first_session: 1
+  last_session: 1
+
+- name: Mr. Witch
+  role: Co-owner of the Witchlight Carnival
+  faction: Witchlight Carnival
+  location: Witchlight Carnival
+  status: neutral
+  short: The cooler half of the carnival ownership. Pocket watch heisted by Baba.
+  long: >-
+    Co-owner of the carnival. A shadar-kai like Mr. Light. His pocket watch — said
+    to keep the carnival running — was clipped from his person by an invisible Baba
+    on a natural-20 sleight-of-hand. His parting cryptic warning to the party:
+    "Mind the rule of three."
+  first_session: 1
+  last_session: 1
+
+- name: Burly
+  role: Bugbear carnival worker
+  faction: Witchlight Carnival
+  location: Witchlight Carnival
+  status: ally
+  short: The bugbear who proposed the watch heist and revealed the disappearances.
+  long: >-
+    A bugbear in carnival livery who removed his helmet and confessed in private:
+    people had been going missing from the carnival for years, and the owners knew
+    more than they let on. He proposed the heist of Mr. Witch's pocket watch as
+    leverage.
+  first_session: 1
+  last_session: 1
+
+- name: Candlefoot
+  role: Mime
+  faction: Witchlight Carnival
+  location: Witchlight Carnival
+  status: ally
+  short: Monochromatic mime who lost his voice to a raven. Voice restored by Kettlesteam.
+  long: >-
+    A monochromatic carnival mime who lost his voice to a raven while proposing to
+    Palasha the mermaid. Helped the party with wire snips for the watch chain. His
+    voice was restored when Kettlesteam removed a thorn from a corn-husk doll.
+  first_session: 1
+  last_session: 1
+
+- name: Feathereen
+  role: Philosophical swan, gondola pilot
+  faction: Witchlight Carnival
+  location: Witchlight Carnival
+  status: neutral
+  short: Asks "What is joy?" and pilots a flower-draped gondola through the mist.
+  long: >-
+    A swan who pilots one of the carnival's gondolas. Opened the ride with the
+    question "What is joy?" and mused on whether time itself was an illusion.
+    The party shared their ages and stories during the hour-long ride.
+  first_session: 1
+  last_session: 1
+
+- name: Dirlagraun
+  role: Displacer beast at Lost Property
+  faction: Witchlight Carnival
+  location: Witchlight Carnival
+  status: ally
+  short: Midnight-blue, butterfly-winged. His child vanished from the carnival.
+  long: >-
+    A midnight-blue displacer beast with tentacles and fake butterfly wings,
+    dispensing apple juice to lost children at the Lost Property wagon. His own
+    child vanished from the carnival without a trace; he saw a blackbird nearby.
+    The party recovered his most treasured possession — a mirrored ball that had
+    been his missing child's favorite toy — after a boy named Viro stole it.
+  first_session: 1
+  last_session: 1
+
+- name: Kettlesteam
+  role: Kenku warlock of Zybilna
+  faction: Mysterious
+  location: Witchlight Carnival
+  status: ally
+  short: Patron has gone silent. Stole Candlefoot's voice to force the owners' hand.
+  long: >-
+    A kenku warlock whose patron — Zybilna, the archfey ruler of Prismeer — has
+    gone silent. She had taken Candlefoot's voice not out of malice but to cause
+    enough trouble to force the carnival owners' hand. Returned the voice in
+    exchange for an audience with management. Revealed the owners' pact with the
+    Hourglass Coven.
+  first_session: 1
+  last_session: 1
+
+- name: Palasha
+  role: Mermaid performer at Silversong Lake
+  faction: Witchlight Carnival
+  location: Witchlight Carnival
+  status: neutral
+  short: Performed until heckling drove her to tears. Engaged to Candlefoot.
+  long: >-
+    A mermaid who performed at Silversong Lake until heckling — by Kettlesteam in
+    disguise — drove her to tears. Engaged to Candlefoot.
+  first_session: 1
+  last_session: 1
+
+- name: The Masked Woman
+  role: Mirror apparition
+  faction: Mysterious
+  location: Hall of Illusions
+  status: unknown
+  short: Appeared in a mirror, asked the party about regrets, and vanished.
+  long: >-
+    A mysterious masked figure who appeared in one of the Hall of Illusions
+    mirrors, asked the party about regrets, and vanished. Her identity and
+    purpose remain unknown.
+  first_session: 1
+  last_session: 1
+
+# ─── The Hourglass Coven ───────────────────────────────────────────────────
+
+- name: Bavlorna Blightstraw
+  role: Hag of the Hourglass Coven
+  faction: Hourglass Coven
+  location: Downfall
+  status: hostile
+  short: Rules Hither from a cottage in Downfall. Can create tiny copies of herself.
+  long: >-
+    One of the three hag sisters of the Hourglass Coven, ruling the splinter realm
+    of Hither from a cottage at the heart of Downfall. The party has not yet met
+    her, but her name keeps surfacing — the brigands had a tribute pact with her,
+    Clapperclaw's stolen stag skull was likely given to her, and King Gullop wants
+    a boot returned to her. To gain audience, the party must join the Soggy Court.
+    Sir Talavar warned that she can create tiny minion copies of herself.
+  first_session: 2
+  last_session: 3
+
+- name: Granny Nightshade
+  role: Hag of the Hourglass Coven
+  faction: Hourglass Coven
+  location: Thither
+  status: hostile
+  short: Rules the neighbouring realm of Thither. Not yet met.
+  long: >-
+    One of the three hag sisters of the Hourglass Coven. Rules the neighbouring
+    splinter realm of Thither. The party hopes to reach her domain via Clapperclaw
+    once they recover his stolen head.
+  first_session: 2
+  last_session: 2
+
+- name: The Third Sister
+  role: Hag of the Hourglass Coven
+  faction: Hourglass Coven
+  location: Unknown
+  status: unknown
+  short: Identity unknown. The third member of the coven.
+  long: >-
+    The third hag sister of the Hourglass Coven. Her name and domain have not
+    yet been revealed.
+  first_session: 2
+  last_session: 2
+
+- name: Zybilna (the Dormant Queen)
+  role: Archfey, former ruler of Prismeer
+  faction: Mysterious
+  location: Unknown
+  status: missing
+  short: Frozen in time by the Hourglass Coven via the Cauldron of Iggwilv.
+  long: >-
+    The archfey who once ruled all of Prismeer. Overthrown and frozen in time by
+    the Hourglass Coven using the Cauldron of Iggwilv. Mr. Light's parting
+    instruction was to "find the alicorn and free the dormant queen at last."
+    Kettlesteam, her warlock, can no longer contact her.
+  first_session: 1
+  last_session: 2
+
+# ─── Hither — Swamp Residents ──────────────────────────────────────────────
+
+- name: Sir Talavar
+  role: Faerie dragon, servant of the Summer Queen
+  faction: Summer Court
+  location: Departed Hither
+  status: ally
+  short: Violet faerie dragon, freed from a silver birdcage. Carrying news to the Summer Queen.
+  long: >-
+    A violet faerie dragon and loyal servant of the Summer Queen, escaping
+    Bavlorna in a patchwork balloon when an ill wind crashed it into the Crooked
+    Tower. The party freed him from a silver birdcage in exchange for his sword
+    (a +1 dagger). He shared the truth of the Hourglass Coven and, in private,
+    spoke to Pip of a fae bladesinger named Vorneal Stellhour. Flew off to report
+    to his queen.
+  first_session: 2
+  last_session: 2
+
+- name: Wigglewog
+  role: Bullywug pilot
+  faction: Soggy Court
+  location: Crooked Tower
+  status: deceased
+  short: Sir Talavar's balloon pilot. Killed in the crash.
+  long: >-
+    A bullywug who served as Sir Talavar's balloon pilot during the escape from
+    Bavlorna. Killed when the balloon crashed into the Crooked Tower.
+  first_session: 2
+  last_session: 2
+
+- name: Jingle Jangle
+  role: Key-collecting goblin of Telamy Hill
+  faction: Hither
+  location: Telamy Hill
+  status: ally
+  short: Wears a coat made of keys. Traded the cage key for foraged truffles.
+  long: >-
+    A small goblin in a coat made entirely of keys, hence the name. Lives in a
+    keyhole-shaped cave at the top of Telamy Hill, surrounded by hundreds of keys
+    and candlelight. She had been robbed by Agdon's brigands three days before
+    the party arrived. Traded the key to Sir Talavar's cage for a haul of foraged
+    truffles, and shared intel about the Tollway and Clapperclaw.
+  first_session: 2
+  last_session: 2
+
+- name: The Awakened Willows of Telamy Hill
+  role: Five sentient trees
+  faction: Hither
+  location: Telamy Hill
+  status: ally
+  short: Welcomed the party, gave them a mysterious iron key as thanks.
+  long: >-
+    Five enormous willows on Telamy Hill that sway without wind and shuffle to
+    greet visitors. Grateful that the party helped Jingle Jangle, they presented
+    them with a mysterious iron key — "it might prove useful later on."
+  first_session: 2
+  last_session: 2
+
+# ─── Hither — Brigand Clan ─────────────────────────────────────────────────
+
+- name: Agdon Longscarf
+  role: Former Brigand Prince of Prismeer
+  faction: Brigand Clan
+  location: Brigand's Tollway
+  status: defeated
+  short: Six-foot blue scarf. Branding iron. Defeated and deposed by the party.
+  long: >-
+    A haregon with a six-foot-long sky-blue scarf and a branding iron shaped like a
+    circle of bunnies. Self-styled Brigand Prince of Prismeer, fond of his own
+    theme song on bagpipes. Moved as fast as lightning (70 ft/turn) and could turn
+    invisible. Defeated by the party on the Tollway catwalks — Erophin's Ensnaring
+    Strike pinned him after Aruni's hare familiar tracked him through the marsh.
+    Confessed to a tribute pact with Bavlorna and was permitted to slink into the
+    mist. The clan accepted the regime change with quiet relief.
+  first_session: 2
+  last_session: 3
+
+- name: Jebek
+  role: Brigand spokesman
+  faction: Brigand Clan
+  location: Hither swamps
+  status: defeated
+  short: Cheerfully announced the first brigand robbery before being intimidated off.
+  long: >-
+    The cheerful spokesman of the brigand crew that ambushed the party in the
+    swamp, demanding their happiest memories rather than gold. Fled with the rest
+    when the party rolled 18s on intimidation.
+  first_session: 2
+  last_session: 2
+
+# ─── Downfall — The Soggy Court ────────────────────────────────────────────
+
+- name: King Gullop XIX
+  role: Bullywug King of Downfall
+  faction: Soggy Court
+  location: Downfall, the Gazebo
+  status: neutral
+  short: Lily-flower crown, leatherbound book, pet crocodile named Snoodle.
+  long: >-
+    The bullywug king of Downfall, ruling from a tarnished marble gazebo. Wears
+    a woven lily-flower crown and reads a massive leatherbound book with his lips
+    moving. Charmed by Baba's improvised address ("Sovereign of Lily and Reed,
+    Keeper of the Emerald Waters, Monarch of the Gilded Pond and Royal Amphibious
+    Highness"). Hates Bavlorna but will not confront her — gave the party a stray
+    boot to return to her, and directed them to the Sinking Palace to join the
+    Soggy Court.
+  first_session: 3
+  last_session: 3
+
+- name: Snoodle
+  role: Royal pet crocodile
+  faction: Soggy Court
+  location: Downfall, the Gazebo
+  status: neutral
+  short: A small crocodile dozing at the foot of King Gullop's throne.
+  long: >-
+    King Gullop XIX's small pet crocodile, dozing at the foot of the throne in
+    the Gazebo.
+  first_session: 3
+  last_session: 3
+
+- name: Duke Grint ("Ickrin")
+  role: Bullywug at the Balloon Factory
+  faction: Soggy Court
+  location: Downfall, Balloon Factory
+  status: ally
+  short: Friendly bullywug. Gave Pip a brass fly brooch for the Soggy Court.
+  long: >-
+    A friendly bullywug duke who runs the balloon factory in Downfall. The party
+    found him desperately bucketing water onto smoldering patchwork after a recent
+    prison escape — someone had set animated coals through the factory to cover
+    the flight. In thanks for the help, he pinned a small brass fly-shaped brooch
+    to Pip's chest, advising him to wear it when presenting himself at the Soggy
+    Court.
+  first_session: 3
+  last_session: 3
+
+- name: Clapperclaw
+  role: Scarecrow guide
+  faction: Downfall
+  location: Bridge of Chattering Heads, Downfall
+  status: ally
+  short: Pumpkin-headed scarecrow. Will guide the party to Thither once his stag skull is returned.
+  long: >-
+    A scarecrow in a yellow straw-stuffed overcoat, currently topped with a pumpkin
+    as a "poor substitute" for his true head — a glorious stag's skull that was
+    stolen by Agdon and probably given to Bavlorna. Stands on the Bridge of
+    Chattering Heads bickering with the mounted former kings. Will guide the party
+    to Thither once his head is recovered. Did not recognise the name Vorneal
+    Stellhour.
+  first_session: 3
+  last_session: 3
+
+- name: Gallop Doer
+  role: Rock elemental of the Stepping Stones
+  faction: Downfall
+  location: Downfall, Stepping Stones
+  status: neutral
+  short: A boulder that turned out to be very offended at being walked on.
+  long: >-
+    A rock elemental who hides among the boulders of Downfall's Stepping Stones.
+    Easily offended ("Who dares step upon me?") but ultimately accommodating —
+    consented to be jumped over after a sheepish apology from Baba.
+  first_session: 3
+  last_session: 3
+
+- name: The Chattering Heads
+  role: Mounted former bullywug kings
+  faction: Downfall
+  location: Bridge of Chattering Heads
+  status: neutral
+  short: Each head insults its successor. Warned of a coup in the works.
+  long: >-
+    The line of former bullywug monarchs of Downfall, mounted on poles along a
+    plank bridge and still talking. They insult one another endlessly, complain
+    about the current king, and pass on rumours. One head warned the party in
+    parting: "I think there's another coup in the works."
+  first_session: 3
+  last_session: 3
+
+# ─── Mysteries ─────────────────────────────────────────────────────────────
+
+- name: Vorneal Stellhour
+  role: Fae bladesinger from Prismeer
+  faction: Mysterious
+  location: Unknown
+  status: missing
+  short: A name from Sir Talavar — possibly Pip's lost mentor.
+  long: >-
+    A name pulled out of Sir Talavar's memory: a fae proficient in the arcane who
+    fights with swords, from Prismeer. Possibly the mentor who taught Pip
+    bladesinging at the carnival eight years ago and then vanished. Nobody in
+    Downfall has heard the name.
+  first_session: 2
+  last_session: 3
+
+- name: Dirlagraun's Child
+  role: Missing displacer beast
+  faction: Mysterious
+  location: Unknown
+  status: missing
+  short: Vanished from the carnival. A blackbird was seen nearby.
+  long: >-
+    Dirlagraun's child, who vanished from the Witchlight Carnival without a trace.
+    The only clue: Dirlagraun saw a blackbird near where the child had last been.
+  first_session: 1
+  last_session: 1

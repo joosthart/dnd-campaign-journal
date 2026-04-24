@@ -12,5 +12,7 @@
       url: /wbtw/sessions/
     - label: Characters
       url: /wbtw/characters/
+    - label: NPCs
+      url: /wbtw/npcs/
     - label: Journey
       url: /wbtw/journey/

@@ -82,6 +82,17 @@ All session summaries from our $NAME campaign.
 </ul>
 EOF
 
+# ── NPCs page ──
+cat > "$CAMPAIGN_DIR/npcs.md" << EOF
+---
+layout: npcs
+title: NPCs
+permalink: /$SLUG/npcs/
+campaign: $SLUG
+subtitle: "Allies, antagonists, and curiosities the party has crossed paths with."
+---
+EOF
+
 # ── Characters index ──
 cat > "$CAMPAIGN_DIR/characters/index.md" << EOF
 ---
@@ -232,11 +243,18 @@ Process the transcript for session **\$ARGUMENTS** and produce all campaign jour
    - Update **What We Know** — add new NPCs, lore, inventory
    - Update **Open Threads** — add new questions, resolve answered ones
 
-5. **Update the website**:
+5. **Update the NPC directory**: Edit \`_data/$SLUG/npcs.yml\`:
+   - Add a new YAML entry for every named NPC the party met or learned about for the first time
+   - Update the \`last_session\` field on existing entries that appeared again
+   - Update \`status\`, \`location\`, or \`long\` if anything important changed (defeated, joined as ally, moved, revealed information)
+   - Use only knowledge the party has gained in-game — no spoilers
+   - Status values: ally | neutral | hostile | defeated | missing | deceased | unknown
+
+6. **Update the website**:
    - Add the new session to the card lists in \`$SLUG/index.md\` and \`$SLUG/sessions.md\`
    - Update character pages in \`$SLUG/characters/\` with any new information revealed this session
 
-6. **Present results**: Show the user the new summary and a brief changelog of what was updated.
+7. **Present results**: Show the user the new summary and a brief changelog of what was updated (story, NPCs, journey, characters).
 
 ## Critical Rules
 
@@ -246,8 +264,38 @@ Process the transcript for session **\$ARGUMENTS** and produce all campaign jour
 - **Consistency**: Match the prose style of existing chapters in \`the_story_so_far.md\`.
 EOF
 
-# ── Journey data file ──
+# ── Journey & NPC data files ──
 mkdir -p "$ROOT/_data/$SLUG"
+
+cat > "$ROOT/_data/$SLUG/npcs.yml" << EOF
+# NPCs the party has met or learned about during play.
+# Add new entries (or update existing ones) as sessions are played.
+# Only include knowledge the party has actually gained in-game — no spoilers.
+#
+# Fields:
+#   name           Display name
+#   role           One-line label (e.g. "Bullywug King of Downfall")
+#   faction        Optional. Used to group NPCs on the page.
+#   location       Where they were last seen
+#   status         ally | neutral | hostile | defeated | missing | deceased | unknown
+#   short          One-line summary (used as card subtitle)
+#   long           Multi-line description (collapsed under <details>)
+#   first_session  Session number where they first appeared
+#   last_session   Session number where they were last seen / referenced
+#
+# Example:
+#
+# - name: Example NPC
+#   role: Innkeeper
+#   faction: Town
+#   location: The Salty Dog Inn
+#   status: ally
+#   short: Pours strong ale and knows everyone in town.
+#   long: >-
+#     Longer description shown when the player expands the card.
+#   first_session: 1
+#   last_session: 1
+EOF
 
 cat > "$ROOT/_data/$SLUG/journey.yml" << EOF
 # Journey timeline data for $NAME.
@@ -313,6 +361,8 @@ cat >> "$ROOT/_data/campaigns.yml" << EOF
       url: /$SLUG/sessions/
     - label: Characters
       url: /$SLUG/characters/
+    - label: NPCs
+      url: /$SLUG/npcs/
     - label: Journey
       url: /$SLUG/journey/
 EOF
@@ -333,11 +383,13 @@ echo "  $SLUG/                          Campaign content folder"
 echo "  $SLUG/index.md                  Campaign landing page (/$SLUG/)"
 echo "  $SLUG/sessions.md               Sessions list (/$SLUG/sessions/)"
 echo "  $SLUG/characters/index.md       Characters list (/$SLUG/characters/)"
+echo "  $SLUG/npcs.md                   NPC directory (/$SLUG/npcs/)"
 echo "  $SLUG/the_story_so_far.md       Story tracker (/$SLUG/story/)"
 echo "  $SLUG/CLAUDE.md                 AI workflow instructions"
 echo "  $SLUG/transcripts/              Transcript folder"
 echo "  $SLUG/summaries/                Summary folder"
 echo "  _data/$SLUG/journey.yml         Journey timeline data"
+echo "  _data/$SLUG/npcs.yml            NPC directory data"
 echo "  $SLUG-journey.html              Journey page (/$SLUG/journey/)"
 echo "  .claude/skills/$SLUG-new-session/  Claude skill for processing sessions"
 echo "  assets/images/$SLUG/            Image folder"

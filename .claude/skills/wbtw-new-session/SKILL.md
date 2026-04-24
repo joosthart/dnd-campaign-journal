@@ -41,11 +41,23 @@ Process the transcript for session **$ARGUMENTS** and produce all campaign journ
    - Update **What We Know** — add new NPCs, lore, inventory; update existing entries with new information
    - Update **Open Threads** — add new questions, remove or mark any that were answered this session
 
-5. **Update the website**: 
+5. **Update the NPC directory**: Edit `_data/wbtw/npcs.yml`:
+   - Add a new YAML entry for every named NPC the party met or learned about for the first time
+   - Update the `last_session` field on existing entries that appeared again
+   - Update `status`, `location`, or `long` if anything important changed (defeated, joined as ally, moved, revealed information)
+   - Use only knowledge the party has gained in-game — no spoilers
+   - Status values: `ally` | `neutral` | `hostile` | `defeated` | `missing` | `deceased` | `unknown`
+   - Group NPCs via the `faction` field (e.g. "Witchlight Carnival", "Hourglass Coven", "Soggy Court", "Brigand Clan", "Summer Court", "Mysterious"). Reuse existing factions where possible; create new ones only when needed.
+
+6. **Update the journey timeline**: Edit `_data/wbtw/journey.yml`:
+   - Add new stops for each notable location the party visited this session
+   - Add region banners and lines as the party crosses into new sub-realms
+
+7. **Update the website**:
    - Add the new session to the card lists in `wild-beyond-the-witchlight/index.md` and `wild-beyond-the-witchlight/sessions.md` (chronological order — append at the bottom).
    - Update character pages in `wild-beyond-the-witchlight/characters/` with any new information revealed this session (new abilities, items, relationships, combat moments). Only include information that has been shown in sessions — never include backstory details the other players haven't learned in-game.
 
-6. **Present results**: Show the user the new summary and a brief changelog of what was updated in `the_story_so_far.md` so they can review.
+8. **Present results**: Show the user the new summary and a brief changelog of what was updated (story, NPCs, journey, characters) so they can review.
 
 ## Critical Rules
 
