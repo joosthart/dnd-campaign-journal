@@ -17,4 +17,6 @@ He was the one who convinced Baba to step through the mirror, gently taking her 
 
 Sir Talavar spoke of a fae named **Vorneal Stellhour** — someone proficient in the arcane who fought with swords, from Prismeer — who may be connected to Pip's past.
 
-In combat, Pip activates Bladesong (AC 19), summons a Shadow Blade, and dual-wields psychic energy and his rapier.
+In combat, Pip activates Bladesong (AC up to 21 with Mage Armor), summons a Shadow Blade, and dual-wields psychic energy and his rapier. In the fight against Agdon Longscarf he landed a natural 20 rapier strike on the Brigand Prince and tried to put him to sleep mid-pursuit. He also rescued Baba with timely one-handed pulls out of muck and unconsciousness alike.
+
+He carries a brass fly brooch, a gift from the bullywug Duke Grint at the balloon factory — to be worn when presenting himself at the Soggy Court of Downfall.

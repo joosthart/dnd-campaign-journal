@@ -243,11 +243,110 @@
   region: hostile
   category: Dangerous
   name: "Brigand's Tollway"
-  short: "Agdon Longscarf's domain. Catwalks over a deep bog. The session ended here."
+  short: "Agdon Longscarf's catwalks. The party dethroned the Brigand Prince here."
   long: >-
     Rickety wooden catwalks stretching over a deep bog, circling a giant tree
     stump. Headquarters of Agdon Longscarf — the haregon Brigand Prince with a
-    bright blue scarf who moves as fast as lightning. The session ended with the
-    party poised at its threshold, the catwalks climbing upward into the murk.
-    Downfall — and Bavlorna Blightstraw — lies beyond.
-  session: 2
+    bright blue scarf who moves as fast as lightning. Here the party caught him
+    with Erophin's Ensnaring Strike, knocked him unconscious, and extracted a
+    confession: he had a tribute pact with Bavlorna Blightstraw. Baba took a
+    branding-iron mark to the arm, a circle of bunnies that still glows. Agdon
+    was deposed and permitted to slink away. The brigand clan, visibly relieved,
+    fed the party and gave them their first long rest in Prismeer.
+  session: 3
+
+- type: line
+  region: hither
+
+# ═══ PRISMEER — DOWNFALL ═══
+
+- type: region
+  region: hither
+  name: "Downfall"
+  sub: "Session 3 — The bullywug settlement"
+
+- type: stop
+  region: hither
+  category: Location
+  name: "Stepping Stones"
+  short: "A crossing of boulders — one of which is a rock elemental."
+  long: >-
+    A line of boulders set two feet apart across the murky water. The third is
+    no boulder at all but Gallop Doer, a rock elemental deeply offended to be
+    mistaken for furniture. ('Who dares step upon me?') After Baba's sheepish
+    apology he consented to be jumped over.
+  session: 3
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hither
+  category: Landmark
+  name: "Balloon Factory"
+  short: "A thatched workshop where the bullywugs build patchwork balloons."
+  long: >-
+    A Mickey-Mouse-shaped thatched building, windows black with soot, smoke
+    pouring from the roof. Duke Grint ('Ickrin'), a distressed bullywug, was
+    throwing buckets of water onto smoldering patchwork when the party arrived.
+    A prisoner had recently escaped and someone had set animated coals through
+    the factory to cover the flight. Pip recognized the fabric: these were the
+    same patches as Sir Talavar's crashed balloon. The bullywugs had built it.
+    Duke Grint pinned a brass fly-brooch to Pip's chest in thanks.
+  session: 3
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hither
+  category: Landmark
+  name: "Bridge of Chattering Heads"
+  short: "Poles of mounted former kings. Clapperclaw, pumpkin-headed, waits in the middle."
+  long: >-
+    A plank bridge lined on both sides with poles, each bearing a bullywug
+    head — Downfall's ousted monarchs, mounted as commentary and still talking.
+    They insulted one another endlessly and warned the party: 'There's another
+    coup in the works.' In the middle stood Clapperclaw, a scarecrow in a yellow
+    straw-stuffed overcoat, topped with a pumpkin. His true head — a glorious
+    stag's skull — was stolen by Agdon and likely given to Bavlorna. Return the
+    skull, he said, and he would guide them to Thither.
+  session: 3
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hither
+  category: Landmark
+  name: "The Gazebo"
+  short: "The court of King Gullop XIX and his crocodile Snoodle."
+  long: >-
+    A tarnished marble gazebo, half-sunk and cracked at the canopy, draped in
+    cushions and harp music. On a reed-and-frog throne sat King Gullop the
+    Nineteenth in a lily-flower crown, reading a leatherbound book with his
+    lips moving. A small crocodile named Snoodle dozed at his feet. Baba's
+    bow — 'Your Majesty, Sovereign of Lily and Reed, Keeper of the Emerald
+    Waters, Monarch of the Gilded Pond and Royal Amphibious Highness' —
+    charmed the whole court. Gullop hates Bavlorna but will not oppose her;
+    he tossed Pip a stray boot to return to her, and directed the party to
+    the Sinking Palace to join the Soggy Court.
+  session: 3
+
+- type: line
+  region: hither
+
+- type: stop
+  region: hither
+  category: Landmark
+  name: "The Sinking Palace"
+  short: "Where one joins the Soggy Court. Session 3 ended at its doors."
+  long: >-
+    Three round sections of sunken architecture connected by a tree, approached
+    by a thin strip of land. To join the Soggy Court — and thereby gain
+    audience with Bavlorna Blightstraw — the party must acquire proper attire
+    and paperwork here. On the walk over, Aruni paused at a half-submerged
+    pillar strung with a spider's web around a king-jewel fern — a quiet fey
+    signal that her home forests still knew where she was. The session ended
+    at the palace doors.
+  session: 3

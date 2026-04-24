@@ -9,6 +9,7 @@ exclude:
   - wild-beyond-the-witchlight/transcripts/
   - wild-beyond-the-witchlight/CLAUDE.md
   - .claude/
+  - scripts/
   - IDEAS.md
   - Gemfile
   - Gemfile.lock

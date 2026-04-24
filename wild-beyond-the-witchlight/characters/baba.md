@@ -15,4 +15,6 @@ Sharp-tongued and unimpressed by most things, Baba was the most reluctant to ste
 
 She pulled off the heist of the campaign — snipping Mr. Witch's pocket watch chain while invisible, with a natural 20 on sleight of hand. At the Big Top, her flaming hoop leap brought the house down.
 
-In combat, Baba uses Step of the Wind, Flurry of Blows, and Deflect Attack — completely negating a 13-damage constriction in the snake fight.
+In combat, Baba uses Step of the Wind, Flurry of Blows, and Deflect Attack — completely negating a 13-damage constriction in the snake fight. In the fight against Agdon Longscarf she burned Feline Agility to close the distance, flurried into the Brigand Prince, and was knocked unconscious by his branding iron — leaving a glowing circle-of-bunnies brand burnt into her skin. She bounced back with a Cure Wounds from Aruni and finished the fight by shoving Agdon deeper into the mud.
+
+She now carries a keychain of her own design: the iron key gifted by the awakened trees, strung with a carved wooden wine-charm shaped like a sprite. Her diplomatic improvisation at King Gullop XIX's court — *"Your Majesty, Sovereign of Lily and Reed, Keeper of the Emerald Waters, Monarch of the Gilded Pond and Royal Amphibious Highness"* — may be the single most charming thing she has ever done on purpose.
